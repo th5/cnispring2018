@@ -6,6 +6,14 @@ Bryn Mawr, Haverford, and Swarthmore Libraries
 
 ---
 
+Digital Preservation & Conservation
+
+Largely non-technical
+
+Still, many tech-related decisions involved
+
+---
+
 UNIX
 
 ---
