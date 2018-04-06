@@ -79,7 +79,7 @@ spell out what you have to work with already
 -They keep library hardware running (storage and compute), linux sys admin
 
 -IT/College integration - many existing paid-for resources
-server rooms, power, cooling
+property, server rooms, power, cooling
 IT staff
   support as linux sys administration
   round the clock support of critical infrastructure
@@ -107,14 +107,85 @@ Library staff
 
 Cloud: 
 
+What's all the fuss?
+
+
+In the tail end of a start-up tech bubble. Rates are low, borrowing is cheap, saving is expensive. Massive investment shift to new tech companies. Tech giants are now the most profitable and powerful companies in the world.
+
+
+Start-ups and tech juggernauts driving the conversation
+
+
+They produce some great technology. When separating the wheat from the chaff, important to understand forces at work where all this tech is coming out of. When these situations greatly differ from our own, there can be a high impedence mismatch.
+
+
+Big tech is operating at an unprecedented scale. They had to create the knowledge and tools to scale that much. Automation created was a necessity. When at smaller scale, many problems are solved more easily with methods that won't massively scale.
+
+For instance, analysing data that can fit on a laptop with Big Data tools is an undue burden.
+
+
+
+Start-ups
+
+They start with nothing. They don't have software, web sites, staff, infrastructure, users...
+
+Cloud hosting (AWS) is a great way to get going with little initial investment.
+
+Starting from scratch. Repeated failure. Often heavily dependent on relatively new engineers - work 'em to the bone. New engineers there have large role in tech decisions. Rapid reinforcing cycle of iterating through new disposable tech [reword]. Lots of shiny objects. Lots of complex tooling. Re-solving many old problems poorly.
+
+Every time I hear [some engineer] say that libraries should be run more like start-ups, a dagger goes straight into my heart. No! NO NO NO!!!
+
+Model ourselves off of get-rich-quick schemes? Off of sweatshops that aim to create nothing of value?
+
+At the very least, their technology decisions are informed by wildly different incentives (right word?).
+
+They aim to scale. Today no users, tomorrow a million. If your app is architected to scale, cloud providers can handle it. They offer many out of the box tools needed to scale.
+
+Low up-front costs. Only pay for more once you have the users.
+
+
+This flexibility isn't free. For a given level of resources, 
+
+
+The cloud isn't like the regular computing we are used to. Basically everything we are familiar with has been fundamentally altered to be able to scale.
+
+Any individual cloud computer can go down at any time. Your massively scalable app is meant to be able to handle those failures.
+
+Storage is weird. We are used to network resources feeling like local resources (eg using files on the "R drive"). We don't have to worry about those two being different because they behave the same to us. Object stores are different and lame.
+
+
+
+A couple notches down from the tech giants are still quite large users. If you are operating at the data center level, "the cloud" can be a good value.
 
 
 
 
+Virtualization is sub-dividing a fixed pool of resources. In the cloud that fixed pool is much larger than one org will use. However same technologies can be applied to local hosting. Still get to chop up, spin up, tear down. Many flexibility benefits able to be realized using similar technologies locally.
+
+Difference: cheaper over life, pay up front, fixed limits
 
 
 
+To be honest I'm cloud-agnostic. I'm not anti-AWS (other than Amazon treating fulfillment workers terribly until they can be replaced by robots and being generally anti-worker). I simply encourage decision-making with open eyes. It's not magic; it's just other people's computers.
 
+It feels like many IT directors don't want to get left behind. "Transitioned org to the cloud", "Oversaw adoption of AWS" never looks bad on their resumes. There are other forces at play above my pay grade.
+
+All I know is that if you aren't careful, it's easy to be sold a bill of goods. "Modern" and "efficient" are codewords for overly complex solutions that cost more, require more staff, and do less.
+
+
+We can still reap the rewards of tech advances. For us, doing so involves cutting through the hype to examine what's available and what would be a good fit.
+
+
+Runnable recipes is a big win. Like virtualization, this is a development has can potentially be a real improvement over the old way of doing things. It isn't magic. It shifts a current problem somewhere else. Instead of maintaining notes, you are maintaining recipes. Gains in efficiency often come at a high cost in configuration. Even tool selection is difficult as there are many overlapping technologies, often used in conjunction.
+
+
+I recently went to a workshop. We performed what would otherwise be a complex installation quickly by using a pre-written runnable recipe. Sounds good. The reality was an absurd series of Russian nesting dolls. 
+
+Computer < Vagrant < Docker
+
+The workshop hosts aim to improve the process by adding Ansible.
+
+How many runnable recipes do I need?!
 
 
 
