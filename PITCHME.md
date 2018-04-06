@@ -16,14 +16,96 @@ Still, many tech and tech-related decisions
 
 Fuzzy boundaries
 
-Many decisions impact much more than preservation
+Preservation technology considerations aren't isolated.
 
-//comment
-// comment
-<!-- comment -->
+Quickly bleed into repositories and lib-tech generally.
+
+<!-- Many decisions impact much more than preservation -->
+
+<!-- 
+Revise language. Convey that some digi pres tech decisions
+also are wider lib-tech decisions
+ -->
+
+<!-- Many decisions are not isolated to digi pres. Best if made
+among wider lib-tech needs. -->
+
+<!-- +++
+
+Case study of my institutions hopefully more broadly applicable -->
+<!-- cut saying explicitly? -->
 
 ---
 
+Pleasantries
+
+Hats off to lib-tech community
+
+Hats off to TriCo, particularly directors and their radical management style (future presentation?)
+
+---
+
+Principles
+
+* UNIX philosophy: narrow composable components
+
+We see this in practice in other apps
+
+Most of ours are made up off-the-shelf broadly reusable components. Most commonly:
+web server (httpd, nginx), database (Postgre), search engine (Solr, Elastic)
+
+When needs require, components can generally be swapped out for something better suited. For instance as an app grows, it may be necessary to move the database on to it's own server, to multiple servers, etc.
+
+Components can be selected for other reasons. We use Apache httpd for everything. This let's us reuse our experience and allows us to sufficiently deepen our working knowledge.
+
+Lower technical debt/costs than do everything monoliths. 
+
+* Go together
+
+Narrow focus of components keep them broadly reusable, not just within an organization but across mainy industries. We greatly benefit from solving common problems together. 
+
+Take Postgre. Instead of working within a single organization or even within the lib-tech community, we leverage the work of practically anyone trying to store and retrieve data. This is orders of magnitude different and cannot be understated.
+
+* Use what you already have
+
+people, infrastructure, knowledge, hardware, etc
+
+<!-- 
+case study on trico
+spell out what you have to work with already     
+-->
+
+-One IT dept, potentially two others
+-They keep library hardware running (storage and compute), linux sys admin
+
+-IT/College integration - many existing paid-for resources
+server rooms, power, cooling
+IT staff
+  support as linux sys administration
+  round the clock support of critical infrastructure
+    network
+    physical hardware
+      compute
+      storage
+    virtualization stack
+  lots of applicable experience: running apps, choosing technologies, etc
+    (often left on the table)
+
+Library staff
+  knowledgable about repositories
+  knowledgable about non-technical and technical preservation practices
+  abreast of developments within the field: hungry to make things happen, high bar of what is possible
+
+
+* Does it fit?
+
+
+
+
+
+
+
+Cloud: 
 
 
 
@@ -37,11 +119,79 @@ Many decisions impact much more than preservation
 
 
 
+Observations
+
+Decisions
 
 
 
 
 
+
+Need
+
+Bridge people: speak both IT and librarian
+
+So close already you can taste it
+Still, too easy to speak past each other and feel divided
+
+"What do they mean when they say preservation storage?"
+
+"A backup is not preservation!"
+
+
+
+
+
+
+
+
+Budget
+
+Financial
+
+Even with most robust endowments in the nation, very cost conscious.
+
+Limited engineering staff => limited technical budget. We can only know/do so much. Quite constrained in development time.
+
+Even staff at large universities pale in comparison to armies of people who make commonly available apps that are users are accustomed to (gmail, word).
+
+
+
+
+No Magic Bullets
+
+No Magic
+
+No single tech
+
+
+
+
+Keeping data long-term isn't a library specific problem. Making data useful isn't a library problem either. Why are we trying to solve them ourselves? If we are blazing the trail, why isn't the rest of the world following along?
+
+We know the value of using the world's solutions. Perhaps we should consider the value of solving the world's problems. Can archive.org be the only thing of value we have to offer? What gains could be realized by broadening our solutions?
+
+
+
+
+
+Many lessons to take away from DAMs
+
+Fedora 3 to 4 extremely painful, particularly for early adopters who customized heavily to add functionality not yet standard.
+
+[The application formerly known as] Hydra <Prince symbol?>
+
+Extremely powerful => will check all boxes on many system comparison charts
+
+Administrators can hear it as one thing to solve all of our problems
+
+In practice, many institutions are spinning their wheels and not getting all that far.
+
+Most of us have simple straight-forward requirements. Why isn't this already a solved problem?
+
+
+Line 
 
 
 
@@ -66,6 +216,9 @@ Storage: Dumb Commodity
 
 
 
+Hosting
+
+Storage
 
 
 
