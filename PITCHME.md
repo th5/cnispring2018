@@ -10,7 +10,37 @@ Digital Preservation & Conservation
 
 Largely non-technical
 
-Still, many tech-related decisions involved
+Still, many tech and tech-related decisions
+
++++
+
+Fuzzy boundaries
+
+Many decisions impact much more than preservation
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ---
 
