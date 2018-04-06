@@ -1,4 +1,4 @@
-Advocating For DSpace
+Preservation: An Opinionated Approach
 
 Tom Hutchinson
 
