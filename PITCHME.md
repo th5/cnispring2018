@@ -6,6 +6,37 @@ Bryn Mawr, Haverford, and Swarthmore Libraries
 
 ---
 
+UNIX
+
+---
+
+Storage: Dumb Commodity
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+
 Situation:
 Many "repos". Each may serve particular purpose. 
 Purpose may be related to repos features. However likely also strong
