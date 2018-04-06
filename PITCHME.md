@@ -75,6 +75,8 @@ case study on trico
 spell out what you have to work with already     
 -->
 
+Use what you already have - details:
+
 -One IT dept, potentially two others
 -They keep library hardware running (storage and compute), linux sys admin
 
@@ -97,8 +99,94 @@ Library staff
   abreast of developments within the field: hungry to make things happen, high bar of what is possible
 
 
+
 * Does it fit?
 
+
+* Plan for anything failing
+
+Assume any hard drive, any file, any computer, etc will fail at any time. Be ready for multiple simultaneous failures.
+
+Remember, a checksum is a file too. Are you able to tell the difference between a bad file and a bad checksum?
+
+Preservation is great because it's about not losing data (durability). It's not about continuous access (availibility). We get to solve an easier technical problem.
+
+
+Storage / Preservation / Repository / Backup
+
+Where should the lines be drawn?
+
+I like keeping them separate but interoperating
+
+
+
+Why not preservation storage?
+
+No longer a dumb cheap commodity. Move from widely used tech to domain specific solutions. Stops being so cheap. Starts going down in quality.
+
+Precious => locked in
+
+
+I prefer a preservation layer that plugs into your storage. Keep storage a commodity. Separate out the special bits.
+
+A preservation layer should abstract away the details of storage. I should be able to plug in a variety of different pools of storage.
+
+DIY -> pres platform ->(future) integrated pres
+            \-> pres storage
+
+
+
+What about preservation within repositories?
+
+This is great. Repositories should be able to perform preservation operations. The additional information a repo has is useful compared with just a bunch of files sitting around.
+
+Pres operations in a repo should be able to be driven externally. I want to plug these into my pres layer too.
+
+
+
+I want to preserve both bare files as well as files in repos.
+
+
+
+S3 does hashes on hashes on hashes. Isn't that preservation?
+
+It's better than them not using hashes. It is not preservation.
+
+Choose technologies that put in safeguards against data loss, such as ZFS and S3. Still assume that these are just as unreliable as the external hard drive in your desk which one day will not turn on.
+
+Preservation requires a paper trail. We need verifiable records. We need to be able to audit.
+
+We don't have to choose between state of the art storage and preservation. Keep the magic in the storage. The interface that storage should present to preservation is it's lowest common denominator, plain old files. Any storage should be easily plugged in as they can all handle this.
+
+
+
+Isn't cloud storage cheap?
+
+Cloud storage providers have been in aggressive price wars. New entrants (Oracle) with deep pockets are paying highly to undercut existing players. At some point (now?) prices will stop dropping. Those that figure out how to profit (or at least not bleed money) at current levels will outlast the others. If they can't do that some firms will be able to afford to operate storage without bringing in a lot. Competition will cool down. Prices will stop dropping. They may rise. They may even rise as dramatically and quickly as they fell.
+
+When things start changing, will you be able to handle it?
+
+
+
+
+Storage is a dumb commmodity. It should be cheap and unremarkable. It shouldn't matter if it's local or hosted.
+
+
+Here is an example of cheap
+
+The cloud hosting company Backblaze publishes the design for their own storage hardware. It's just a big computer with as many consumer grade hard drives as they can pack in. You can buy one from a vendor or build one yourself. ~$10k will get you a quarter petabyte (1P = 1000T)
+
+How does your annual cloud storage bill look compared with that? How much storage are you getting for it?
+
+
+
+
+
+Hosted vs Enterprise vs White Box vs DIY
+
+What do you need? Up-time, redundancy, support, ...
+
+Sticker costs vs staff time
 
 
 
@@ -234,7 +322,9 @@ No Magic Bullets
 
 No Magic
 
-No single tech
+No Single Tech
+
+No Piling on Tech
 
 
 
