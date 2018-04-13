@@ -30,11 +30,13 @@ Quickly bleed into repositories and lib-tech generally.
 ---
 
 UNIX
+
 Broadly reusable composable pieces
 
 ---
 
 UNIX
+
 Narrow constrained
 
 grep
@@ -42,6 +44,7 @@ grep
 ---
 
 UNIX
+
 Narrow constrained
 
 Fedora
