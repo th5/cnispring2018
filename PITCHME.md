@@ -16,7 +16,9 @@ Still, many tech and tech-related decisions
 
 Fuzzy boundaries
 
-Note: Preservation technology considerations aren't isolated. Quickly bleed into repositories and lib-tech generally.
+Note: 
+
+Preservation technology considerations aren't isolated. Quickly bleed into repositories and lib-tech generally.
 
 ---
 
